@@ -1,4 +1,4 @@
-require 'pry'
+
 
 def find_min_in_nested_arrays(src)
   # src will be an array of arrays of integers
@@ -7,12 +7,8 @@ def find_min_in_nested_arrays(src)
   row_index = 0 
   while row_index<src.count do
     results = []
-    count_array = 0 
-    #binding.pry
-    p src[row_index].min
-    
-  end 
-  count_array += 1 
-  row_index += 1
+    results << src[row_index].min
+    row_index += 1 
+  end
   outer_results
 end
